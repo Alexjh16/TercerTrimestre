@@ -6,6 +6,6 @@ $("#empleos").click(function(){
     window.location.href="services/empleos.html";
 });
 
-$("#empleados").click(function(){
-    window.location.href="services/empleados.html";
+$("#interesados").click(function(){
+    window.location.href="services/interesados.html";
 });

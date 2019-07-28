@@ -78,6 +78,18 @@ section .stars li{
     margin-top: 10px;    
 }
 
+section small{
+    font-family: 'Andale Mono', monospace;
+    font-weight: 500;
+    font-size: 0.7em;
+}
+
+section small p{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
 section span{
     font-family: Ubuntu;
 }
