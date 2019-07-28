@@ -49,3 +49,12 @@ header .menu ul li button{
     outline: none;
 }
 
+section{
+    margin-top: 50px;
+    padding-bottom: 25px;
+    border-bottom: 5px solid rgb(128, 128, 128,0.2);
+}
+
+section img{
+    width: 100%;
+}
