@@ -10,14 +10,20 @@ header .menu{
     display: flex;
     position: relative;
 }
+.header{
+    width: 100%;
+    z-index: 122;
+    background-color: red;
+}
 
 header{
-    padding-bottom: 15px;
-    margin-top: 10px;
-    padding: 15px;
-    border-radius: 3px;
+    position: fixed;
+    padding-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(189, 180, 180);
     border-bottom: 1.5px solid rgba(51,51,51,0.7);
-    width: 98%;
+    z-index: 777;
 }
 header .menu h2{
     font-size: 2.5em;
@@ -48,10 +54,10 @@ header .menu ul li button{
     transition: .3s;
 }
 
-.container ul li button:hover{
-    background-color: rgba(255,255,255,0.21);
+header .menu ul li button:hover{
+    color: white;
     transition: .3s;
-    border: .5px solid rgba(81,77,116,0.4)
+    background-color: rgba(51,51,51,0.1);
 }
 
 .container ul li button:active{
@@ -59,8 +65,8 @@ header .menu ul li button{
 }
 
 section{
-    margin-top: 50px;
-    padding-bottom: 25px;
+    margin-top: 15%;
+    padding-bottom: 10%;
     border-bottom: 5px solid rgb(128, 128, 128,0.2);
 }
 
@@ -92,4 +98,40 @@ section small p{
 
 section span{
     font-family: Ubuntu;
+}
+
+footer{
+    padding-top: 35px;
+}
+
+footer .description{
+    background-color: rgb(37, 31, 31);
+    color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+footer .about{
+    background-color: rgb(37, 31, 31,0.958);
+    padding-top: 25px;
+    color: #FFF;
+    text-align: center;
+}
+
+footer .about p{
+    font-size: 1.72em;
+}
+
+footer .about ul{
+    margin-top: 20px;
+    margin-left: -5%;
+}
+
+footer .about ul li{
+    display: inline;
+    font-size: 1.98em;
+    padding-left: 20px;
+    color:#FFF;
 }

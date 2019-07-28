@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/empleados.css">
+    <link rel="stylesheet" href="../css/empleos.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <title>Empleados</title>
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <link rel="stylesheet" href="../css/ubuntu-fonts.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <title>Empresas</title>
 </head>
 <body>
-<div class="container">    
+<div class="header">
     <div class="row">
         <div class="col-md-12">
             <header>
@@ -17,15 +20,31 @@
                     <h2>Listado de interesados</h2>
                     <div class="options">
                         <ul>
-                            <li><button>inicio</button></li>
-                            <li><button>empleos</button></li>
-                            <li><button>empresas</button></li>
+                            <li><button id="inicio">inicio</button></li>
+                            <li><button id="empresas">empresas</button></li>
+                            <li><button id="empleos">empleos</button></li>
                         </ul>
                     </div>
                 </div>                    
             </header>
         </div>
-    </div>    
-</div>    
+    </div>
+</div>
+<div class="container">
+    <section>
+        
+    </section>
+</div>
 </body>
+<script type="text/javascript">
+$("#inicio").click(function(){
+    window.location.href="../index.html";
+});
+$("#empresas").click(function(){
+    window.location.href="empresas.html";
+})
+$("#empleos").click(function(){
+    window.location.href="empleos.html";
+})
+</script>
 </html>

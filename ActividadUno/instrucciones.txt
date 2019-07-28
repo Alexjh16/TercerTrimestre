@@ -8,12 +8,12 @@ Que debe tener la página web.
 
 x) Debe contar con un menú de navegación en donde se pueda apreciar los siguientes ítems de navegación.  
 
-1-) Empresas
+x) 1-) Empresas
    Al entrar en empresas podremos apreciar un listado con 10 empresas.
 
   Dicho listado debe contener una respectiva imagen de la empresa, nombre, descripción, dirección y una pequeña calificación con estrellas. 
 
-2-) empleos.
+x) 2-) empleos.
 Al entrar en la sección empleos podremos apreciar 20 ofertas de empleo disponibles. 
 
 Las cuales deben contener la siguiente información, título de la oferta (ejemplo. Secretaria de despacho jurídico, Programador web, almacenista, etc...), descripción, salario y horario(7-5). 
