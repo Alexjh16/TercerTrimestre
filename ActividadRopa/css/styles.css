@@ -1,0 +1,284 @@
+@import url("");
+/*format multi fonts in web browsers*/
+@font-face{
+    font-family: "beauty";
+    font-style: "normal";
+    font-weight: 800;
+    src: url("../fonts/Beauty.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "beautyFont";
+    font-style: "bolder";
+    font-weight: 900;
+    src: url("../fonts/Beauty.ttf") format("opentype");
+}
+@font-face{
+    src: url("../fonts/DropGame.ttf") format("opentype");
+    font-family: "DropGame";
+    font-style: "normal";
+}
+
+@font-face{
+    src: url("../fonts/Unicorn.ttf") format("opentype");
+    font-family: "Unicorn";
+    font-style: "normal";
+    font-weight: 800;
+}
+
+@font-face{
+    src: url("../fonts/Ubuntu.ttf") format("opentype");
+    font-family: "Ubuntu";
+    font-style: "normal";
+    font-weight: 700;
+}
+
+header{
+    background-color: #333333;
+    color: #F9F9F9;
+    padding: 2rem 0;
+    position: fixed;
+    height: 12vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+header a{
+    color: rgba(249,249,249);
+    font-family: "DropGame";
+    transition: .3s;
+}
+
+header a:hover{
+    color: rgb(202,202,202)
+}
+.logo a{
+    font-size: 2.4em;
+    font-family: "DropGame";
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo img{
+    width: 35px;
+    height: 35px;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    display: inline;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    text-decoration: none !important;
+}
+
+nav ul li a:hover{
+    background: #CACACA;
+    color: rgba(51,51,51);
+}
+
+.sections{
+    background-color: rgba(202,202,202,0.4);
+    margin-top: 5%;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;    
+}
+
+.banner .caption h2{
+    font-size: 9em;
+    font-family: "beauty";
+    color: rgb(249,249,249);
+    position: relative;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.banner .span p{
+    font-size: 1.8em;
+    font-family: "beautyFont";
+    color: rgb(249,249,249);
+    position: relative;
+    margin-left: 10%;
+}
+
+.imagen{
+     width: 100%;
+     height: 90vh;
+     position: absolute;
+}
+
+.sections section .instant-image{
+    width: 80%;
+    position: absolute;
+    height: auto;
+    padding-top: 25px;
+    padding-left: 32px;
+    padding-bottom: 40px;
+    background-color: rgba(202,202,202,0.7);
+    border-radius: 3px;
+}
+/*container sections images*/
+.instant-images{
+    height: 80vh;
+}
+
+.instant-image img{
+    padding: 1.5%;
+    position: relative;
+    padding-bottom: 15px;
+    width: 88%;
+    height: 20rem;
+    border-radius: 8px;
+}
+
+.instant-image span{
+    font-family: "DropGame";
+}
+
+.instant-image .sponsers img{
+    margin-left: 0px;
+    width: 60px;
+    height: 60px;
+}
+
+.instant-image button{
+    margin-left: 4.5%;
+    background-color:  transparent;
+    border: 1.777px solid #F9F9F9;
+    padding: 10px;
+    width: 80%;
+    border-radius: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    color: #333333;
+    transition: .553s;
+}
+
+.instant-image button:hover{
+    color: rgba(249,249,249);
+    background-color: rgba(51,51,51,.234);
+    transition: .553s;
+}
+
+.forms-container{
+    padding-top: 73vh;
+    padding-left: 7%;
+    width: 95%;
+}
+
+.forms-container .line{
+    width: 85%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #333333;
+}
+
+.forms-container .snow-icon{
+    font-size: 5em;
+    text-align: center;
+    margin-top: -5rem;
+    margin-left: -4rem;
+}
+
+footer{
+    padding: 4rem 0;
+    margin-top: 6rem;
+    height: 80vh;
+}
+
+footer .about-us{
+    background-color: rgba(249,249,249,0.2);
+    text-align: center;
+}
+
+footer .about-us h2{
+    font-size: 3.14em;
+    padding-bottom: 7rem;
+    font-family: "DropGame";
+}
+
+footer .social-contacts{
+    background-color: rgba(51,51,51,.3);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    color: rgba(249,249,249);
+}
+
+footer .social-contacts h4{
+    font-family:  "Unicorn";
+    font-size: 2.5em;
+}
+
+footer .social-contacts p{
+    padding-top: 1rem;
+    font-family: "Ubuntu";
+    font-size: 1.7em;
+}
+
+footer .social-contacts p a{
+    color: rgba(51,51,51);
+    text-decoration: none;
+    transition: .524s;
+}
+
+footer .social-contacts p a:hover{
+    cursor: pointer;
+    color: rgba(51,51,51,.6);
+    transition: .524s;
+}
+
+footer .terms{
+    background-color: rgba(51,51,51);
+    padding-top: 2rem;
+}
+
+footer .terms .simple-line{
+    margin-left: -1rem;
+    width: 100%;
+    margin-top: 3rem;
+    height: 1px;
+    background-color: #CACACA;
+    border-radius: 2px;
+}
+
+footer .terms span{
+    color: #CACACA;
+    margin-left: 1.5rem;
+    font-size: 1.8em;
+    font-family: "Unicorn"
+}
+
+footer .terms ul li{
+    font-size: 2.4em;
+    padding-left: 10px;
+    padding-top: 15px;
+    color: rgba(202,202,202);
+}
+
+/*
+    #333333 --> rgb(51,51,51)
+    #F9F9F9 --> rgb(249,249,249)
+    #CACACA --> rgb(202,202,202)
+*/
+
+
