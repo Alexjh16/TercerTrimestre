@@ -1,4 +1,9 @@
-@import url("");
+@import url("kids.css");
+@import url("women.css");
+@import url("men.css");
+@import url("contact.css");
+@import url("promotions.css");
+
 /*format multi fonts in web browsers*/
 @font-face{
     font-family: "beauty";
@@ -60,15 +65,26 @@ header a:hover{
     text-decoration: none;
     cursor: pointer;
 }
-.logo img{
-    width: 35px;
-    height: 35px;
-}
+
 .logo-nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+/* hide nav for pc display */
+.mobile-only{
+    display: none
+}
+
+#menu{
+    display: none;
+}
+
+label{
+    display: none;
+}
+/* end mobile */
 
 nav ul{
     margin: 0;
@@ -93,6 +109,14 @@ nav ul li a:hover{
     color: rgba(51,51,51);
 }
 
+.active{
+    text-decoration: none !important;
+    border-radius: 5px;
+    padding: 0.4rem 1rem;
+    font-family: "DropGame";
+    background: #CACACA;
+    color: rgba(51,51,51);
+}
 .sections{
     background-color: rgba(202,202,202,0.4);
     margin-top: 5%;
@@ -127,9 +151,10 @@ nav ul li a:hover{
 }
 
 .sections section .instant-image{
-    width: 80%;
-    position: absolute;
+    display: block;
+    max-width: 100%;
     height: auto;
+    padding-right: 32px;
     padding-top: 25px;
     padding-left: 32px;
     padding-bottom: 40px;
@@ -138,16 +163,26 @@ nav ul li a:hover{
 }
 /*container sections images*/
 .instant-images{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.instant-images::before{
     height: 80vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: "";
 }
 
 .instant-image img{
-    padding: 1.5%;
-    position: relative;
     padding-bottom: 15px;
-    width: 88%;
-    height: 20rem;
-    border-radius: 8px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
 }
 
 .instant-image span{
@@ -156,8 +191,10 @@ nav ul li a:hover{
 
 .instant-image .sponsers img{
     margin-left: 0px;
+    display: inline;
     width: 60px;
     height: 60px;
+    padding: 5px;    
 }
 
 .instant-image button{
@@ -180,19 +217,18 @@ nav ul li a:hover{
 }
 
 .forms-container{
-    padding-top: 73vh;
-    padding-left: 7%;
-    width: 95%;
+    padding-top: 45px;
+    text-align: center;
 }
 
-.forms-container .line{
+.forms-container hr{
     width: 85%;
     height: 5px;
     border-radius: 2px;
     background-color: #333333;
 }
 
-.forms-container .snow-icon{
+.snow-icon{
     font-size: 5em;
     text-align: center;
     margin-top: -5rem;
@@ -275,6 +311,221 @@ footer .terms ul li{
     color: rgba(202,202,202);
 }
 
+
+@media (max-width: 980px){
+    .web-only{
+        display: none
+    }
+
+    #menu{
+        display: block;
+    }
+
+    label{
+        display: block;
+    }
+
+    .mobile-only{
+        display: block;
+    }
+    header{
+        padding: 1rem;
+        position: fixed;
+        height: 10vh;
+        font-size: .72em;
+    }
+
+    #menu{
+        display: none;
+    }
+    .menu-bar ul li{
+        display: none;
+    }
+
+    .logo a{
+        padding: 0;
+        margin-left: -10%;
+    }
+    header label{
+        font-size: 2.7rem;
+        margin-left: 60%;
+        cursor:  pointer;
+        transition: 0.4s;
+    }
+
+    header label:hover{
+        color: rgba(202,202,202,0.4);
+        transition: 0.4s;
+    }
+
+    .menu-bar{
+        position: absolute;
+        z-index: -1;
+        top: 10vh;
+        left: 0;
+        width: 25%;
+        height: 100vh;
+        background: rgba(51,51,51,0.6);
+        transition: all 0.5s;
+        transform: translateX(-100%); 
+    }
+
+    .menu-bar ul li{
+        display: block;
+        height: 3rem;
+        padding: 1.5rem;
+        font-size: 1.4em;
+    }
+
+    #menu:checked ~ .menu-bar{
+        transform: translateX(-0%);
+    }
+
+    .instant-image .sponsers img{
+        display: inline;
+        position: initial;
+    }
+
+    .instant-image{
+        width: 73%;
+        margin-left: 10%;
+    }
+
+    .instant-image button{
+        margin-left: 12%;
+    }
+
+    .instant-image .sponsers img{
+        margin-left: 40px;
+        padding-bottom: 2rem;
+    }
+    .instant-images .instant-image{
+        margin-top: 75px;
+    }
+}  /*end 980px*/
+
+@media (max-width: 768px){
+    .banner .caption h2{
+        font-size: 5.5em;
+    }
+    
+    .banner .span{
+        font-size: 1.00117em;
+    }
+
+    .instant-image{
+        width: 77%;
+    }
+
+    .instant-image img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    section footer h4{
+        font-size: 1.2em;
+    }
+    
+    section footer p{
+        font-size: 0.656455em;
+    }
+
+    .instant-image{
+        width: 65%;
+        margin-left: 18%;
+    }
+
+    .instant-image button{
+        margin-left: 10%;
+    }
+
+    .instant-image .sponsers img{
+        margin-left: 15px;
+        padding-bottom: 2rem;
+    }
+    .instant-images .instant-image{
+        margin-top: 75px;
+    }
+} /*end 768px*/
+
+@media (max-width: 725px){
+    .logo a{
+        margin-left: 0%;
+    }
+
+    header label{
+        margin-left: 35%;
+    }
+
+    .instant-image{
+        width: 62%;
+        margin-left: 18%;
+    }
+
+    .instant-image button{
+        margin-left: 10%;
+    }
+
+    .instant-image .sponsers img{
+        margin-left: 4px;
+        padding-bottom: 2rem;
+    }
+    .instant-images .instant-image{
+        margin-top: 75px;
+    }
+} /*end 725px*/
+
+@media (max-width: 480px){
+    .logo a{
+        margin-left: 0%;
+    }
+
+    header label{
+        margin-left: 25%;
+    }
+
+    .menu-bar{
+        width: 45%;
+    }
+
+    .banner .caption h2{
+        font-size: 3.5em;
+        margin-top: 25%;
+    }
+    
+    .banner .span{
+        font-size: 0.87117em;
+    }
+
+    .instant-image{
+        width: 75%;
+        margin-left: 14%;
+    }
+
+    .instant-image button{
+        margin-left: 10%;
+    }
+
+    .instant-image .sponsers img{
+        margin-left: 0px;
+        padding-bottom: 2rem;
+    }
+    .instant-images .instant-image{
+        margin-top: 75px;
+    }
+} /*end 480px*/
+
+@media (max-width: 384px){
+    .banner .caption h2{
+        font-size: 2.7em;
+        margin-top: 35%;
+    }
+
+    .banner .span{
+        font-size: 0.776em;
+    }
+} /*end 384px /nexus/ */
 /*
     #333333 --> rgb(51,51,51)
     #F9F9F9 --> rgb(249,249,249)

@@ -1,0 +1,85 @@
+
+
+
+
+.top form{
+    margin-top: 9%;
+    
+}
+
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(202,202,202,0.7);
+    padding: 10px 20px ;
+    box-sizing: border-box; 
+    border-radius: 7px;
+}
+
+form h2 {
+    color: #333333;
+    text-align: center;
+    margin:0;
+    font-size:35px;
+    margin-bottom: 20px;
+    font-family: "Unicorn";
+    
+}
+
+form input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 22px;
+    border: none;
+    font-family: "Unicorn";
+    color: #333333;
+    
+}
+
+form textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #333333;
+    color: #F9F9F9;
+    padding: 15px;
+    width: 50%;
+    margin-left: 26%;
+    border-radius: 8px;
+    transition: all 2s;
+}
+
+#boton:hover{
+    background: rgba(249,249,249); 
+    color: rgba(51,51,51);
+}
+
+.mapa{
+    margin-top: 5%;
+    text-align: center;
+    
+}
+
+.mapa h2{
+    color: #333333;
+    font-family: "Unicorn";
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.mapa iframe{
+    width: 90%;
+    height: 500px;
+}
+
+
+/*
+    #333333 --> rgb(51,51,51)
+    #F9F9F9 --> rgb(249,249,249)
+    #CACACA --> rgb(202,202,202)
+*/
