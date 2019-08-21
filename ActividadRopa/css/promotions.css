@@ -2,8 +2,7 @@
     margin-top: 9%;
     text-align: center;
     font-family: "DropGame";
-    font-size: 3em;
-    
+    font-size: 3em;    
 }
 
 .container h3{
@@ -13,17 +12,60 @@
     margin-bottom: 20px;
 }
 
-
-img.mediana{
-    width: 350px; 
-    height: 400px;
-    text-align: center;
+#promotions .container-image{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(202,202,202);
+    box-shadow: -8px 8px 8px 0px rgba(202,202,202,0.9);
+    border-radius: 3px;
 }
 
-img.icono{
-    width: 80px;
-    height: 80px;
-    border-radius: 70px;
+#promotions .container-image:before{
+    position: absolute;
+}
+
+#promotions .porcent{
+    position: relative;
+    width: 7rem;
+    border-radius: 1px;
+    top: -35.1rem;
+    left: -12px;
+    padding: 1rem;
+    padding-left: 2rem;
+    background-color: rgba(130, 207, 100, 0.76);
+    transition: .4s;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+#promotions .porcent:hover{
+    box-shadow: 0px 0px 4px 1px rgba(130, 207, 100, 0.96);
+    transition: .4s
+}
+
+#promotions p{
+    margin-top: 15px;
+    line-height: 2rem;
+    padding-left: 1rem;
+    font-family: "Ubuntu";
+}
+
+#promotions button{
+    font-family: "Ubuntu";
+    color: #F9F9F9;
+    padding: 15px;
+    background: rgba(51, 51, 51);
+    width: 30%;
+    margin-left: 37%;
+    border-radius: 7px;
+    transition: all 2s;
+}
+
+#promotions button:hover{
+    background-color:  transparent;
+    border: 1px solid rgba(51,51,51,0.7);
+    color: rgba(51,51,51);
+    transition: all .73s;
 }
 
 .btn{
@@ -36,9 +78,16 @@ img.icono{
     transition: all 2s;
 }
 
-.btn:hover{
-    background: rgba(202,202,202,0.7);
-    color: #F9F9F9;
+section .mediana{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+section .icono{
+    width: 80px;
+    height: auto;
+    border-radius: 70px;
 }
 
 .container p{
@@ -46,3 +95,118 @@ img.icono{
     color: #333333;
 }
 
+
+@media (max-width: 980px){
+    #promotions .top h2{
+        font-size: 2.4em;
+        transition: .7s;
+        margin-top: 12%;
+    }
+
+    #promotions h3{
+        font-size: 2.3em;
+        margin-top: 7.5rem;
+    }
+
+    #promotions .porcent{
+        top: -87rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    }
+
+    #promotions p{
+        margin-top: 20px;
+        font-size: 1.4em;
+        line-height: 2.8rem;
+    }
+
+    #promotions button{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 768px){
+    #promotions .top h2{
+        font-size: 2em;
+        transition: .7s;
+        margin-top: 15%;
+    }
+    
+    #promotions .porcent{
+        top: -83rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    }
+}
+
+@media (max-width: 725px){
+    #promotions .porcent{
+        top: -81rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    } 
+}
+
+@media (max-width: 697px){
+    #promotions .porcent{
+        top: -72rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    } 
+}
+
+@media (max-width: 632px){
+    #promotions .top h2{
+        font-size: 1.6em;
+        transition: .7s;
+        margin-top: 17%;
+    }
+
+    #promotions .porcent{
+        top: -60rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    } 
+}
+
+@media (max-width: 525px){    
+    #promotions .porcent{
+        top: -58rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    } 
+}
+
+@media (max-width: 480px){
+    #promotions .porcent{
+        top: -52rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    } 
+}
+
+@media (max-width: 384px){
+    #promotions .container-image{
+        width: 95%;
+    }
+
+    #promotions .top h2{
+        font-size: 1.2em;
+        transition: .7s;
+        margin-top: 22%;
+    }
+
+    #promotions .porcent{
+        top: -42rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    } 
+}

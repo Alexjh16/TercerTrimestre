@@ -474,6 +474,14 @@ footer .terms ul li{
     .instant-images .instant-image{
         margin-top: 75px;
     }
+
+    section footer h4{
+        font-size: 0.9em;
+    }
+    
+    section footer p{
+        font-size: 0.456455em;
+    }
 } /*end 725px*/
 
 @media (max-width: 480px){
@@ -524,6 +532,22 @@ footer .terms ul li{
 
     .banner .span{
         font-size: 0.776em;
+    }
+    .instant-image{
+        width: 75%;
+        margin-left: 10%;
+    }
+
+    .instant-image button{
+        margin-left: 10%;
+    }
+
+    .instant-image .sponsers img{
+        margin-left: 0px;
+        padding-bottom: 2rem;
+    }
+    .instant-images .instant-image{
+        margin-top: 75px;
     }
 } /*end 384px /nexus/ */
 /*

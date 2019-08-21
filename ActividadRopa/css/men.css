@@ -1,0 +1,175 @@
+/* class for title of content is tag <section></section> */
+.top h2 {
+    margin-top: 9%;
+    text-align: center;
+    font-family: "DropGame";
+    font-size: 3em;    
+}
+
+#men .container-image{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(202,202,202);
+    box-shadow: -8px 8px 8px 0px rgba(202,202,202,0.9);
+    border-radius: 3px;
+}
+
+#men .container-image:before{
+    position: absolute;
+}
+
+#men .porcent{
+    position: relative;
+    width: 7rem;
+    border-radius: 1px;
+    top: -35.1rem;
+    left: -12px;
+    padding: 1rem;
+    padding-left: 2rem;
+    background-color: rgba(130, 207, 100, 0.76);
+    transition: .4s;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+#men .porcent:hover{
+    box-shadow: 0px 0px 4px 1px rgba(130, 207, 100, 0.96);
+    transition: .4s
+}
+
+#men p{
+    margin-top: 15px;
+    line-height: 2rem;
+    padding-left: 1rem;
+    font-family: "Ubuntu";
+}
+
+#men button{
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    color: rgba(51,51,51);
+    border: 1px solid rgba(51,51,51,0.7);
+    background-color:  transparent;
+    transition: .73s;
+}
+
+#men button:hover{
+    background: #333333;
+    color: #F9F9F9;
+    transition: all .73s;
+}
+
+@media (max-width: 980px){
+    #men .top h2{
+        font-size: 2.4em;
+        transition: .7s;
+        margin-top: 12%;
+    }
+
+    #men h3{
+        font-size: 2.3em;
+        margin-top: 7.5rem;
+    }
+
+    #men .porcent{
+        top: -87rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    }
+
+    #men p{
+        margin-top: 20px;
+        font-size: 1.4em;
+        line-height: 2.8rem;
+    }
+
+    #men button{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 768px){
+    #men .top h2{
+        font-size: 2em;
+        transition: .7s;
+        margin-top: 15%;
+    }
+    
+    #men .porcent{
+        top: -83rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    }
+}
+
+@media (max-width: 725px){
+    #men .porcent{
+        top: -81rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    } 
+}
+
+@media (max-width: 697px){
+    #men .porcent{
+        top: -72rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    } 
+}
+
+@media (max-width: 632px){
+    #men .top h2{
+        font-size: 1.6em;
+        transition: .7s;
+        margin-top: 17%;
+    }
+
+    #men .porcent{
+        top: -60rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    } 
+}
+
+@media (max-width: 525px){    
+    #men .porcent{
+        top: -58rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    } 
+}
+
+@media (max-width: 480px){
+    #men .porcent{
+        top: -52rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    } 
+}
+
+@media (max-width: 384px){
+    #men .container-image{
+        width: 95%;
+    }
+
+    #men .top h2{
+        font-size: 1.2em;
+        transition: .7s;
+        margin-top: 22%;
+    }
+
+    #men .porcent{
+        top: -42rem;
+        width: 12rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    } 
+}
