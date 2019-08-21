@@ -311,6 +311,11 @@ footer .terms ul li{
     color: rgba(202,202,202);
 }
 
+footer .terms ul li:hover{
+    color: rgba(202,202,202,0.4);
+    transition: .4s;
+}
+
 
 @media (max-width: 980px){
     .web-only{
